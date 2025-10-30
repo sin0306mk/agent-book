@@ -14,7 +14,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="ReflectiveAgentを使用してタスクを実行します（Cross-reflection）"
     )
-    parser.add_argument("--task", type=str, required=True, help="実行するタスク", needs_retry=True)
+    parser.add_argument("--task", type=str, required=True, help="実行するタスク")
     args = parser.parse_args()
 
     # OpenAIのLLMを初期化
